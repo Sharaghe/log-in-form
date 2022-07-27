@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-wrapper > .left{
+    flex: 1 1 400px;
+    background-color: red;
+    min-width: 400px;
+}
+
+
+.flex-wrapper > .right{
+    flex: 2 1 100%;
+    background-color: blue;
+}
