@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,16 +8,26 @@
 .flex-wrapper{
     display: flex;
     flex-direction: row;
+    height: 100vh;
 }
 
 .flex-wrapper > .left{
-    flex: 1 1 400px;
-    background-color: red;
-    min-width: 400px;
+    flex: 1 1 600px;
+    min-width: 600px;
+    background: url(./pictures/gradient.jpg);
+    background-size: cover;
 }
 
 
 .flex-wrapper > .right{
     flex: 2 1 100%;
-    background-color: blue;
+}
+
+.logo-box{
+    background: rgba(0, 0, 0, 0.5);
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: white;
+    font-size: 3.5em;
+    padding: 1em;
+    text-align: center;
 }
