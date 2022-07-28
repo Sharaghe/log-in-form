@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 
+:root{
+    font-size: 1em;
+}
+
 * {
     margin: 0;
     padding: 0;
+}
+
+p{
+    margin-bottom: 20px;
 }
 
 .flex-wrapper{
@@ -27,7 +35,59 @@
     background: rgba(0, 0, 0, 0.5);
     font-family: 'Mochiy Pop One', sans-serif;
     color: white;
-    font-size: 3.5em;
+    font-size: 3.5rem;
     padding: 1em;
     text-align: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background: #eee;
+}
+
+.content > div {
+    padding: 40px;
+}
+
+.intro-text, .login-form{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.65em;
+    color: #555;
+}
+
+.login-form{
+    background: #FFF;
+    box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.2);
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: #888;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+
+ul>li{
+    flex: 1 1 50%;
+}
+
+ul>li>label{
+    display: block;
+}
+
+input{
+    min-width: 250px;
+    border-radius: 3px;
+    border: 1px solid #DDD;
+    padding: 6px;
+    font-size: 1rem;
+    margin-bottom: 20px;
 }
