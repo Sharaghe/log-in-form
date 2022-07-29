@@ -8,6 +8,7 @@
 * {
     margin: 0;
     padding: 0;
+    outline: 0;
 }
 
 p{
@@ -59,7 +60,7 @@ p{
 }
 
 .intro-text, .login-form{
-    font-size: 1.65em;
+    font-size: 1.5em;
     color: #555;
 }
 
@@ -83,19 +84,30 @@ ul{
 
 ul>li{
     flex: 1 1 50%;
+    position: relative;
 }
 
 ul>li>label{
     display: block;
+    margin-bottom: 3px;
 }
 
 input{
     min-width: 250px;
-    border-radius: 3px;
+    border-radius: 5px;
     border: 1px solid #DDD;
     padding: 6px;
     font-size: 1rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+input:invalid{
+    border: 1px solid rgb(188, 57, 57);;
+}
+
+input:focus{
+    border: 1px solid cornflowerblue;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .login-tile{
@@ -124,4 +136,17 @@ a:link, a:hover, a:visited{
     color: #a50783;
     font-weight: bold;
     text-decoration: none;
+}
+
+.help, .pw-help{
+    display: none;
+}
+
+.invalid .pw-help{
+    display: block;
+    position: absolute;
+    color: rgb(188, 57, 57);
+    font-size: .9em;
+    text-transform: initial;
+    bottom: 12px;
 }

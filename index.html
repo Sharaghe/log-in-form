@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
     <link rel="stylesheet" href="./style.css" />
-    <script src="./app" defer></script>
+    <script src="./app.js" defer></script>
 </head>
 <body>
     <div class="flex-wrapper">
@@ -16,6 +16,7 @@
             </div>
         </div>
         <div class="right">
+            <form action="#" method="post">
             <div class="content">
                 <div class="intro-text">
                     <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
@@ -26,34 +27,38 @@
                     <p>
                         Let's do this!
                     </p>
-                    <form>
                         <ul>
                             <li>
-                                <label for="first-name">First Name</label>
-                                <input type="text" id="first-name">
+                                <label for="first-name">First Name *</label>
+                                <input type="text" id="first-name" required />
+                                <span class="help">Please enter your first name</span>
                             </li>
                             <li>
-                                <label for="last-name">Last Name</label>
-                                <input type="text" id="last-name">
+                                <label for="last-name">Last Name *</label>
+                                <input type="text" id="last-name" required />
+                                <span class="help">Please enter your last name</span>
                             </li>
                             <li>
-                                <label for="email">Email</label>
-                                <input type="email" id="email">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" required />
+                                <span class="help">Please enter a valid E-Mail adress</span>
                             </li>
                             <li>
                                 <label for="phone-number">Phone Number</label>
-                                <input type="tel" id="phone-number">
+                                <input type="tel" id="phone-number" />
+                                <span class="help">Please enter a valid phone number</span>
                             </li>
                             <li>
-                                <label for="password">Password</label>
-                                <input type="password" id="password">
+                                <label for="password">Password *</label>
+                                <input type="password" id="password" required />
+                                <span class="help">Please enter a password</span>
                             </li>
                             <li>
-                                <label for="confirm-password">Confirm Password</label>
-                                <input type="password" id="confirm-password">
+                                <label for="confirm-password">Confirm Password *</label>
+                                <input type="password" id="confirm-password" required /> 
+                                <span class="pw-help">The passwords do not match</span>
                             </li>
                         </ul>
-                    </form>
                 </div>
                 <div class="login-tile">
                     <button class="login">Create Account</button>
@@ -61,8 +66,8 @@
                         <a href="#">Log in</a>
                     </p>
                 </div>
-                
             </div>
+        </form>
         </div>
     </div>
 </body>
